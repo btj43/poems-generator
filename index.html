@@ -9,28 +9,33 @@
   <body>
     <div class="container">
       <header>
-        <h1>Poems Generator</h1>
+        <h1>AI Poem Generator</h1>
       </header>
       <main>
-        <form id="poem-form">
-          <input
-            type="text"
-            placeholder="Enter the topic of the poem"
-            autofocus
-            required
-            autocomplete="off"
-            class="prompt"
-            id="poem-prompt"
-          />
-          <input type="submit" class="submit-btn" />
-        </form>
+        <div class="form-selection">
+          <form id="poem-form">
+            <input
+              type="text"
+              placeholder="Enter the topic of the poem"
+              autofocus
+              required
+              autocomplete="off"
+              class="prompt"
+              id="poem-prompt"
+            />
+            <input type="submit" class="submit-btn" />
+          </form>
+          <div class="hint">e.g. Flowers, work or life</div>
+        </div>
         <br />
-        <div id="poem" class="poem"></div>
+        <div id="poem" class="poem hidden"></div>
       </main>
       <br />
       <footer>
         <div>
-          This AI project was coded by <a>Beth Jones</a> and is open sourced on
+          This AI project was coded by
+          <a href="www.linkedin.com/in/bethtjones">Beth Jones</a> and is open
+          sourced on
           <a href="https://github.com/btj43/poems-generator">github</a> hosted
           on
           <a href="https://btj-ai-poem-generator.netlify.app/">netlify</a>

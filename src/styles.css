@@ -13,11 +13,21 @@ h1 {
   text-align: center;
 }
 
-form {
-  padding: 30px;
+.form-selection {
   background-color: white;
   border-radius: 6px;
   box-shadow: 0px 15px 40px #959595;
+  padding: 30px;
+}
+
+form {
+  padding-bottom: 10px;
+}
+
+.hint {
+  color: grey;
+  opacity: 70%;
+  font-size: smaller;
 }
 
 .prompt {
@@ -46,9 +56,23 @@ form {
   line-height: 24px;
   box-shadow: 0px 15px 40px #959595;
   font-size: 18px;
+  border: 5px solid lightblue;
 }
 
+.hidden {
+  display: none;
+}
 a {
   color: navy;
   text-decoration: none;
+}
+
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }

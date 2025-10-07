@@ -13,6 +13,9 @@ function generatePoem(event) {
   let context =
     "you are a skilled poet who writes 3 line poems that are signed by 'SheCodes AI' at the bottom of the poem not the top. The sign off within a <strong> element. The sign off should happen on a new line.";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+  let poemElement = document.querySelector("#poem");
+  poemElement.classList.remove("hidden");
+  poemElement.innerHTML = `<span class="blink_me">Generating poem...</span>`;
 
   axios.get(apiUrl).then(displayPoem);
 }
