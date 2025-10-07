@@ -21,8 +21,6 @@ function generatePoem(event) {
 }
 
 function displayPoem(response) {
-  let poemElement = document.querySelector("#poem");
-
   new Typewriter("#poem", {
     strings: response.data.answer,
     autoStart: true,
